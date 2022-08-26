@@ -1,0 +1,180 @@
+{
+	"id": "c6d3116d-7e18-4964-95c1-68a841e4e217",
+	"name": "Dummy",
+	"timestamp": "2022-08-25T14:31:26.536Z",
+	"collection_id": "23015491-b3ea8691-18ea-4a11-b43f-5e54e8989221",
+	"folder_id": "23015491-cb8ffc86-d222-48cb-b8a5-6e0e441d14b3",
+	"environment_id": "0",
+	"totalPass": 17,
+	"totalFail": 11,
+	"results": [
+		{
+			"id": "bbb030de-fd7d-47fc-a35b-2a37a621d1ce",
+			"name": "GetAllEmployee",
+			"time": 708,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Le status de ma requete get HTTP code est 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Le status de ma requete get HTTP code est 200": {
+					"pass": 2,
+					"fail": 2
+				},
+				"Your test name": {
+					"pass": 2,
+					"fail": 2
+				}
+			},
+			"times": [
+				849,
+				726,
+				679,
+				708
+			],
+			"allTests": [
+				{
+					"Le status de ma requete get HTTP code est 200": true,
+					"Your test name": true
+				},
+				{
+					"Le status de ma requete get HTTP code est 200": false,
+					"Your test name": false
+				},
+				{
+					"Le status de ma requete get HTTP code est 200": false,
+					"Your test name": false
+				},
+				{
+					"Le status de ma requete get HTTP code est 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "7a44b054-8aae-45d0-8ee1-a517287019a0",
+			"name": "GetSingleExistingEmployeeById",
+			"time": 668,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Successfully! Record has been fetched.": true,
+				"ID = 15": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 1
+				},
+				"Successfully! Record has been fetched.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID = 15": {
+					"pass": 3,
+					"fail": 1
+				}
+			},
+			"times": [
+				704,
+				716,
+				697,
+				668
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Successfully! Record has been fetched.": true,
+					"ID = 15": true
+				},
+				{
+					"Status code is 200": true,
+					"Successfully! Record has been fetched.": true,
+					"ID = 15": true
+				},
+				{
+					"Status code is 200": false,
+					"Successfully! Record has been fetched.": false,
+					"ID = 15": false
+				},
+				{
+					"Status code is 200": true,
+					"Successfully! Record has been fetched.": true,
+					"ID = 15": true
+				}
+			]
+		},
+		{
+			"id": "3311b7bf-2d1d-4f70-a52e-b63f3c26db68",
+			"name": "Post",
+			"time": 650,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Successful POST request": false,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 2,
+					"fail": 2
+				},
+				"Status code is 200": {
+					"pass": 2,
+					"fail": 2
+				}
+			},
+			"times": [
+				618,
+				639,
+				670,
+				650
+			],
+			"allTests": [
+				{
+					"Successful POST request": false,
+					"Status code is 200": false
+				},
+				{
+					"Successful POST request": true,
+					"Status code is 200": true
+				},
+				{
+					"Successful POST request": true,
+					"Status code is 200": true
+				},
+				{
+					"Successful POST request": false,
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 8324,
+	"collection": {
+		"requests": [
+			{
+				"id": "bbb030de-fd7d-47fc-a35b-2a37a621d1ce",
+				"method": "GET"
+			},
+			{
+				"id": "7a44b054-8aae-45d0-8ee1-a517287019a0",
+				"method": "GET"
+			},
+			{
+				"id": "3311b7bf-2d1d-4f70-a52e-b63f3c26db68",
+				"method": "POST"
+			}
+		]
+	}
+}
